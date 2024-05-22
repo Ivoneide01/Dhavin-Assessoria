@@ -1,0 +1,22 @@
+{
+  "name": "dhavin-assessoria",
+  "version": "1.0.0",
+  "description": "dravin",
+  "main": "firebase-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivoneide01/Dhavin-Assessoria.git"
+  },
+  "author": "nid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivoneide01/Dhavin-Assessoria/issues"
+  },
+  "homepage": "https://github.com/Ivoneide01/Dhavin-Assessoria#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
