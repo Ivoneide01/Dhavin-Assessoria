@@ -1,0 +1,465 @@
+/*CSS variables section*/
+:root {
+    background-color: rgba(0, 0, 21, 1);
+    
+}
+
+
+.heeder-large-screen{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    color:#d3d610;
+    font-size: 18px !important;
+    align-items: center;
+
+
+}
+#navDemo{
+    background-color: #000015;
+    
+}
+#navDemo a{
+    font-size: 13px !important;
+    color:#d3d610;
+}
+
+.hero{
+    height: 650px;
+    background-image: url("/");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: #000015; 
+
+    
+}
+
+.hero-title img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-description{
+    background-color: rgba(0, 0, 21, .7);
+    display: flex;
+}
+.hero-text{
+    width:70% !important;
+    margin: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.hero-text p{
+    color:white;
+    width:auto;
+}
+.hero-title{
+    text-transform: uppercase;
+
+}
+.social{
+    width:100%;
+}
+.icons{
+    font-size: 20px;
+    letter-spacing: 5px;
+
+}
+main{
+    width:80% !important;
+    margin: auto !important;
+}
+.title{
+    color:white;
+    font-weight: 600;
+    font-size: 40px;;
+    margin:50px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+
+.game-logo img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+h3{
+    color:white;
+    text-align: center;
+}
+
+.games{
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color:	rgba(0, 0, 47,0.3); */
+    justify-content: space-evenly;
+}
+.game-list{
+    margin: 30px;;
+    padding: 20px;
+    height: 400px;
+    width:250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid gray;
+    background: #5f6008;
+    background: linear-gradient(to right, #d3d610, #746c06 ); 
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, #f1f501, 255, 0.18 );
+    
+}
+
+.w3-bar-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center; /* Centers items horizontally */
+}
+.game-list:hover{
+    transform: scale(1.05);
+}
+.store{
+    margin-top: 50px;
+}
+.game-store{
+    margin-top: 20px !important;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.game-image{
+    width:50px;
+    height: 50px;
+    
+}
+.game-image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.game-store-list{
+    width:50px;
+    height: 50px;
+     margin: 20px;
+    overflow: hidden;
+    border-top: none;
+    
+      -webkit-box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+              box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-bottom: 1px solid #f7f809;
+    color:white;
+     
+}
+
+.Certificado-list{
+    width:300px;
+    height: 300px;
+     margin: 20px;
+    overflow: hidden;
+    border-top: none;
+    
+      -webkit-box-shadow: 0 8px 40px 0 #f7f809;
+              box-shadow: 0 8px 40px 0 #746c06;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-bottom: 1px solid #d3d610;
+    color:white;
+     
+
+}
+
+
+.store-text-description{
+     
+padding-left:20px;
+display: flex;
+flex-direction: column;
+     
+} 
+h4{
+    color:white;
+    font-weight: 700;
+}
+.event-hero{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 75, 255, 0.1);
+    justify-content: space-evenly;
+    align-items: center;
+    padding:50px;
+    margin-top: 50px;
+    border:1px solid black;
+    border-radius: 10px;
+    
+}
+.event-text{
+    width:50%;
+    color: #5f6008;
+
+}
+.event-title{
+    font-size: 40px;
+    text-transform: uppercase;
+
+    font-weight: 600;
+    
+
+}
+.event-image{
+    width:200px;
+    height: 250px;
+}
+.event-image img{
+    width: 150%;
+    height: 100%;
+    object-fit: contain;
+}
+.event-text p{
+    color: white;
+}
+.contact{
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact-list{
+    margin-top: 15px !important;
+    color: white;
+}
+h5{
+    color:white;
+}
+span{
+    padding-right: 10px;
+}
+
+.email-contact{
+    width:80%;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+/*General CSS and CSS reset*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* ____________________________________________________________________*/
+/*MEDIA QUERIES*/
+/*Large screens - Desktop*/
+@media screen and (max-width: 1500px) {
+    .hero{
+        height: 500px !important;;
+        background-image: url("/img/papel-de-parede.jpg");
+    }
+    .hero-description{
+        height: 550px 
+    }
+    .hero-title{
+        font-size:80px;
+    }
+    .hero-title{
+        font-size:80px;
+    }
+}
+
+/*medium screens - Laptops*/
+@media screen and (max-width: 1024px) {
+    main{
+        width:100% !important;
+        margin: auto !important;
+    }    
+    
+}
+
+/*Small screens - tablets*/
+@media screen and (max-width: 768px) {
+    .heeder-large-screen{
+        display:block !important;
+    }
+    header a{
+        font-size: 14px;
+    }
+    .hero{
+        height: 600px !important;
+        background-image: url("/");
+    }
+    .hero-description{
+        background-color: rgba(0, 0, 21, .7);
+        
+    
+    }
+    
+    .hero-title {
+        text-transform: uppercase;
+        margin-bottom: 20px; /* Adiciona margem entre os títulos */
+    }
+    
+    .hero-title img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .hero-text p{
+        width: 80%;;
+        font-size: 13px;
+    }
+    .title{
+        text-align: center;
+        font-size: 30px;
+    }
+    .event-text{
+        width:80%;
+        color: blueviolet;
+
+    }
+    .event-text p{
+        font-size: 13px;
+    }
+    .event-title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    
+
+    }
+    .event-hero{
+        width: 80% ;
+        margin: auto;
+    }
+    .event-image{
+        width:250px;
+        height: 400px;
+    }
+    .event-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .contact-list{
+        width: 300px;
+    }
+    .contact{
+        justify-content: space-around;
+    }
+    .contact-list p{
+        font-size: 14px ;
+
+    }
+    h5{
+        font-size: 17px;
+    }
+    
+}
+
+/*Extra small screens - phones*/
+@media screen and (max-width: 480px) {
+    .heeder-large-screen{
+        display:block !important;
+    }
+    .hero{
+        height: 450px !important;
+        background-image: url("/");
+    }
+    .hero-description{
+        background-color: rgba(0, 0, 21, .7);
+    
+    }
+    .hero-title{
+        font-size: 30px;;
+    }
+    .hero-text p{
+        width: 100%;;
+        font-size: 13px;
+    }
+    .title{
+        text-align: center;
+        font-size: 25px;
+    }
+    .event-text{
+        width:100%;
+        color: blueviolet;
+
+    }
+    .event-text p{
+        font-size: 13px;
+    }
+    .event-title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    
+
+    }
+    .event-hero{
+        width: 90% ;
+        margin: auto;
+    }
+    .event-image{
+        width:250px;
+        height: 400px;
+    }
+    .event-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .contact-list{
+        width: 300px;
+        padding:25px;
+        border:1px solid rgba(49, 45, 45, 0.5);
+        border-radius: 10px;
+    }
+    .contact-list p{
+        font-size: 12px ;
+
+    }
+    h5{
+        font-size: 15px;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+}
