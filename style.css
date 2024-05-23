@@ -295,7 +295,7 @@ html {
         background-image: url("/img/papel-de-parede.jpg");
     }
     .hero-description{
-        height: 550px 
+        height: 300px 
     }
     .hero-title{
         font-size:80px;
@@ -323,7 +323,7 @@ html {
         font-size: 14px;
     }
     .hero{
-        height: 600px !important;
+        height: 550px !important;
         background-image: url("/");
     }
     .hero-description{
@@ -399,7 +399,7 @@ html {
         display:block !important;
     }
     .hero{
-        height: 450px !important;
+        height: 350px !important;
         background-image: url("/");
     }
     .hero-description{
@@ -415,7 +415,8 @@ html {
     }
     .title{
         text-align: center;
-        font-size: 25px;
+        font-size: 22px;
+        margin-top: 40%;
     }
     .event-text{
         width:100%;
