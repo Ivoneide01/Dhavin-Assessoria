@@ -111,11 +111,12 @@ h3{
     align-items: center;
     border:1px solid gray;
     background: #5f6008;
-    background: linear-gradient(to right, #d3d610, #746c06 ); 
+    background-image: url(/Dhavin/Dhavin/img//fundo-cards/papel\ de\ parede\ chuva.jpg);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, #f1f501, 255, 0.18 );
+    
     
 }
 
