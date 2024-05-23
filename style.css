@@ -292,7 +292,7 @@ html {
 @media screen and (max-width: 1500px) {
     .hero{
         height: 500px !important;;
-        background-image: url("/img/papel-de-parede.jpg");
+        background-image: url("/Dhavin/Dhavin/img/dhavin-fundo.png");
     }
     .hero-description{
         height: 300px 
