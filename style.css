@@ -416,6 +416,7 @@ html {
     .title{
         text-align: center;
         font-size: 22px;
+        margin-top: 40%;
     }
     .event-text{
         width:100%;
