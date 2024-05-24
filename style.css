@@ -291,9 +291,18 @@ html {
 /*Large screens - Desktop*/
 @media screen and (max-width: 1500px) {
     .hero{
-        height: 500px !important;;
+        position: relative; /* Para que o posicionamento absoluto do ::before seja relativo a este elemento */
+        height: 700px !important;
         background-image: url("/Dhavin/Dhavin/img/dhavin-fundo.png");
+        background-size: cover; /* Ajusta a imagem de fundo para cobrir completamente o elemento */
+        background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+        background-position: center;
+        background-color: #00001517;
     }
+
+ 
+
+    
     .hero-description{
         height: 300px 
     }
@@ -324,7 +333,7 @@ html {
     }
     .hero{
         height: 550px !important;
-        background-image: url("/");
+        background-image: url("/Dhavin/Dhavin/img/dhavin-fundo.png");
     }
     .hero-description{
         background-color: rgba(0, 0, 21, .7);
@@ -400,7 +409,7 @@ html {
     }
     .hero{
         height: 350px !important;
-        background-image: url("/");
+        background-image: url("/Dhavin/Dhavin/img/dhavin-fundo.png");
     }
     .hero-description{
         background-color: rgba(0, 0, 21, .7);
