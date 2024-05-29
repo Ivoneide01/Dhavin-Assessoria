@@ -111,7 +111,11 @@ h3{
     align-items: center;
     border:1px solid gray;
     background: #5f6008;
-    background-image: url(/Dhavin/Dhavin/img//fundo-cards/papel\ de\ parede\ chuva.jpg);
+    background-image: url(/Dhavin/Dhavin/img/contato-dravin.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Dhavin/Dhavin/img/contato-dravin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
