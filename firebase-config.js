@@ -23,11 +23,10 @@ const analytics = getAnalytics(app);
 const db = getDatabase(app);
 
 // Função para enviar dados do formulário para o Firebase
-export function enviarDadosFormulario(nome, email, telefone) {
+export function enviarDadosFormulario(nome, email) {
   const contatosRef = ref(db, 'contatos'); // Referência à coleção 'contatos'
   return push(contatosRef, {
     nome: nome,
-    email: email,
-    telefone: telefone
+    email: email
   });
 }
