@@ -105,6 +105,8 @@
                 <input type="text" name="name" id="name" placeholder="Name" required/><br><br>
                 <label for="email">Email</label><br>
                 <input type="email" name="email" id="email" placeholder="Email" required/><br><br>
+                <label for="telefone">Telefone</label><br>
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required/><br><br>
                 <button type="submit" class="w3-btn w3-red w3-margin-top w3-round" id="info">Receber mais informações</button>
                 <p id="message" style="display:none;">As informações foram enviadas!</p>
               </form>
@@ -169,6 +171,7 @@
 
       const nome = formContato['name'].value;
       const email = formContato['email'].value;
+      const telefone = formContato['telefone'].value;
 
       // Enviar os dados para o Firebase Realtime Database
       enviarDadosFormulario(nome, email)
