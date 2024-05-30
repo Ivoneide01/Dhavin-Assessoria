@@ -45,7 +45,7 @@
 }
 .hero-text{
     width:70% !important;
-    margin: auto !important;
+    margin: 50px !important; 
     display: flex;
     flex-wrap: wrap;
     
