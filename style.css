@@ -504,3 +504,20 @@ html {
     }
     
 }
+.info-copy {
+    color: #ffffff; /* Define a cor do texto geral como branco */
+    text-align: center;
+}
+
+.desenvolvido-por {
+    color: #ffffff; /* Define a cor do texto "Desenvolvido por" como branco */
+}
+
+.author-link {
+    color: #fef601; /* Define a cor do link para o autor */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+}
+
+.author-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+}
