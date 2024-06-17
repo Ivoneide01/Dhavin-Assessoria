@@ -107,12 +107,11 @@
               <p>Não deixe que as dores do crescimento atrapalhem o sucesso do seu negócio. Entre em contato conosco hoje preencha o formulário  e descubra como nossas soluções de Growth Marketing podem impulsionar o seu negócio para novos patamares de sucesso. </p>
               <h4></h4>
               <form id="formularioContato">
-                <label for="nome">Name</label><br>
-                <input type="text" nome="nome" id="nome" placeholder="Nome" required/><br><br>
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Name" required/><br><br>
                 <label for="email">Email</label><br>
-                <input type="email" nome="email" id="email" placeholder="Email" required/><br><br>
-                <button type="submit" class="w3-btn w3-red w3-margin-top w3-round" id="info">Receber mais informações</button>
-                <p id="message" style="display:none;">As informações foram enviadas!</p>
+                <input type="email" name="email" id="email" placeholder="Email" required/><br><br>
+                <button type="submit" class="w3-btn w3-red w3-margin-top w3-round">Receber mais informações</button>
               </form>
           <div class="event-image">
             <img src="/Dhavin/Dhavin/img/contato-dravin-quadrado.gif"/>
@@ -171,34 +170,34 @@
     }
        </script>
 
-       <!-- Scripts -->
-  <script type="module" src="firebase-config.js"></script>
-  <script type="module">
-    import { enviarDadosFormulario } from './firebase-config.js';
+ <!-- Scripts -->
+ <script type="module" src="firebase-config.js"></script>
+ <script type="module">
+   import { enviarDadosFormulario } from './firebase-config.js';
 
-    // Adicionar evento de envio ao formulário
-    const formContato = document.getElementById('formularioContato');
+   // Adicionar evento de envio ao formulário
+   const formContato = document.getElementById('formularioContato');
 
-    formContato.addEventListener('submit', (e) => {
-      e.preventDefault();
+   formContato.addEventListener('submit', (e) => {
+     e.preventDefault();
 
-      const nome = formContato['nome'].value;
-      const email = formContato['email'].value;
+     const nome = formContato['name'].value;
+     const email = formContato['email'].value;
 
-      // Enviar os dados para o Firebase Realtime Database
-      enviarDadosFormulario(nome, email)
-        .then(() => {
-          console.log('Dados do formulário de contato enviados com sucesso!');
-          // Aqui você pode adicionar qualquer ação que deseja realizar após o envio bem-sucedido dos dados
-        })
-        .catch((error) => {
-          console.error('Erro ao enviar dados do formulário de contato:', error);
-        });
+     // Enviar os dados para o Firebase Realtime Database
+     enviarDadosFormulario(nome, email)
+       .then(() => {
+         console.log('Dados do formulário de contato enviados com sucesso!');
+         // Aqui você pode adicionar qualquer ação que deseja realizar após o envio bem-sucedido dos dados
+       })
+       .catch((error) => {
+         console.error('Erro ao enviar dados do formulário de contato:', error);
+       });
 
-      // Limpar o formulário após o envio
-      formContato.reset();
-    });
-  </script>
+     // Limpar o formulário após o envio
+     formContato.reset();
+   });
+ </script>
     <script type="module" src="./style.css"></script>
     <script type="module" src="/Dhavin/Dhavin/botaoReceberInformacoes.js"></script>
   
