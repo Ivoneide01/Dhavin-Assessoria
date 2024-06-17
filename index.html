@@ -107,10 +107,10 @@
               <p>Não deixe que as dores do crescimento atrapalhem o sucesso do seu negócio. Entre em contato conosco hoje preencha o formulário  e descubra como nossas soluções de Growth Marketing podem impulsionar o seu negócio para novos patamares de sucesso. </p>
               <h4></h4>
               <form id="formularioContato">
-                <label for="name">Name</label><br>
-                <input type="text" name="name" id="name" placeholder="Name" required/><br><br>
+                <label for="nome">Name</label><br>
+                <input type="text" nome="nome" id="nome" placeholder="Nome" required/><br><br>
                 <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" placeholder="Email" required/><br><br>
+                <input type="email" nome="email" id="email" placeholder="Email" required/><br><br>
                 <button type="submit" class="w3-btn w3-red w3-margin-top w3-round" id="info">Receber mais informações</button>
                 <p id="message" style="display:none;">As informações foram enviadas!</p>
               </form>
@@ -162,10 +162,10 @@
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
       var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
+      if (x.classNome.indexOf("w3-show") == -1) {
+        x.classNome += " w3-show";
       } else { 
-        x.className = x.className.replace(" w3-show", "");
+        x.classNome = x.classNome.replace(" w3-show", "");
       }
       
     }
@@ -182,7 +182,7 @@
     formContato.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const nome = formContato['name'].value;
+      const nome = formContato['nome'].value;
       const email = formContato['email'].value;
 
       // Enviar os dados para o Firebase Realtime Database
