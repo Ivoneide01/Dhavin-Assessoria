@@ -1,11 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var form = document.getElementById("formularioContato");
-    var message = document.getElementById("message");
+// Suponha que você tenha um formulário com os campos name e email
+const form = document.getElementById("formularioContato");
 
-    form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Previne o comportamento padrão de submissão do formulário
-        message.style.display = "block";
-        alert("As informações foram enviadas!");
-        enviarDadosParaFirebase(); // Função para enviar os dados do formulário para o Firebase
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Captura dos valores dos campos do formulário
+  const name = form.elements["name"].value;
+  const email = form.elements["email"].value;
+
+  // Chama a função para enviar dados para o Firebase
+  enviarDadosFormulario(name, email)
+    .then(() => {
+      console.log('Dados do formulário de contato enviados com sucesso!');
+      // Exibe a mensagem de sucesso
+      const successMessage = document.getElementById('successMessage');
+      successMessage.style.display = 'block';
+      // Opcional: oculta a mensagem após 3 segundos
+      setTimeout(function() {
+        successMessage.style.display = 'none';
+      }, 3000);
+    })
+    .catch((error) => {
+      console.error('Erro ao enviar dados do formulário de contato:', error);
     });
+
+  // Limpa o formulário após o envio
+  form.reset();
 });
