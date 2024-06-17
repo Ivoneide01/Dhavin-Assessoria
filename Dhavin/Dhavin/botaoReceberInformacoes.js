@@ -8,4 +8,3 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("As informações foram enviadas!");
     });
 });
-
