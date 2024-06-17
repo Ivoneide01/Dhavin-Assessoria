@@ -521,3 +521,7 @@ html {
 .author-link:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
 }
+#message {
+    display: none;
+    color: rgb(255, 255, 255);
+}
