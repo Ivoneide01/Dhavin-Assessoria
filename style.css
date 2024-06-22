@@ -525,3 +525,25 @@ html {
     display: none;
     color: rgb(255, 255, 255);
 }
+
+/*whatzapp flutuante */
+
+
+.whatsapp-ico {
+    fill: white;
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    background: linear-gradient(90deg, #07af1a, #2db508);
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgb(2, 2, 10);
+    /* box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7); */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.whatsapp-ico:hover {
+    box-shadow: 0px 5px 50px 0px #2df700 inset, 0px 5px 50px 0px #067f12, 0px 5px 50px 0px #f2eff1 inset, 0px 5px 50px 0px #19ce01;
+}
