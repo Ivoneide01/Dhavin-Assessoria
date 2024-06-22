@@ -4,16 +4,18 @@ import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.12
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-analytics.js";
 
 // Configuração do Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyB1t75NnHe81F1cUX1Rr7C5op-vt5XpQeA",
-  authDomain: "dhavin-76ecc.firebaseapp.com",
-  databaseURL: "https://dhavin-76ecc-default-rtdb.firebaseio.com",
-  projectId: "dhavin-76ecc",
-  storageBucket: "dhavin-76ecc.appspot.com",
-  messagingSenderId: "251036624256",
-  appId: "1:251036624256:web:0c6a94fcb417d43f780d65",
-  measurementId: "G-YDR30YT21Y"
-};
+ // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAaXaQYKDPuW_Ml6WrnDrCx12mVydBm-wU",
+    authDomain: "dhavin-new.firebaseapp.com",
+    databaseURL: "https://dhavin-new-default-rtdb.firebaseio.com",
+    projectId: "dhavin-new",
+    storageBucket: "dhavin-new.appspot.com",
+    messagingSenderId: "1048204239667",
+    appId: "1:1048204239667:web:438f8e90edb1f613e51446",
+    measurementId: "G-52Y0REFPRT"
+  };
 
 // Inicializar o aplicativo Firebase
 const app = initializeApp(firebaseConfig);
